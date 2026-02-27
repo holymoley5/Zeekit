@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Keranjang - Zeehat</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Keranjang</h1>
+    <nav>
+        <a href="index.html">Menu</a>
+    </nav>
+</header>
+
+<div id="cart-items" style="padding:50px;"></div>
+<h2 id="total" style="text-align:center;"></h2>
+
+<script>
+let cart = JSON.parse(localStorage.getItem("cart")) || [];
+let total = 0;
+const container = document.getElementById("cart-items");
+
+cart.forEach(item => {
+    container.innerHTML += `<p>${item.name} - Rp ${item.price}</p>`;
+    total += item.price;
+});
+
+document.getElementById("total").innerText = "Total: Rp " + total;
+</script>
+
+</body>
+</html>
