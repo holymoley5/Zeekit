@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Zeehat - Healthy Food Karawang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Zeehat</h1>
+    <nav>
+        <a href="index.html">Menu</a>
+        <a href="cart.html">Keranjang (<span id="cart-count">0</span>)</a>
+        <a href="about.html">Tentang</a>
+        <a href="contact.html">Kontak</a>
+    </nav>
+</header>
+
+<section class="menu-container">
+
+    <div class="card">
+        <img src="IMG_3643.jpeg">
+        <h3>menu susu sakit hati</h3>
+        <p>Rp 25.000</p>
+        <button onclick="addToCart('menu susu sakit hati',25000)">Tambah</button>
+    </div>
+
+    <div class="card">
+        <img src="IMG_3644.jpeg">
+        <h3>Salad Premium</h3>
+        <p>Rp 30.000</p>
+        <button onclick="addToCart('paket sehat tapi galau',30000)">Tambah</button>
+    </div>
+
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
